@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background: #020202;
+  cursor: crosshair;
+}
+
+canvas{display:block}
+
+.song {
+  visibility: hidden;
+}
+
+h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: pink;
+  font-family: "Source Sans Pro";
+  font-size: 3em;
+  font-weight: 800;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #bbb;
+  font-family: "Source Sans Pro";
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  -webkit-user-select: none;
+  user-select: none;
+}
