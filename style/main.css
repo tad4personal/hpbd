@@ -46,16 +46,13 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-div {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  -webkit-user-select: none;
-  user-select: none;
-}
 img {
   display: block;
+  max-width: 600px;
   width: 100%;
   height: auto;
+  position: absolute;
+  top: 0;
+  -webkit-user-select: none;
+  user-select: none;
 }
