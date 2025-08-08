@@ -41,4 +41,5 @@ p {
   transform: translateX(-50%);
   color: #aaa;
   width: 100%;
+  font-style: italic;
 }
