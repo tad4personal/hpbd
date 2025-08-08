@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,13 +14,35 @@
   <!-- My Style -->
   <link rel="stylesheet" href="./style/main.css" />
 </head>
+
 <body>
-  <audio id="hbpd-song" autoplay loop muted>
-    <source src="./music/hpbd.mp3" type="audio/mpeg">
-  </audio>
-  <h1>Happy Birthday <br class="name">Phương & má Hường</h1>
-  <p>Tap the screen continuously to shoot big fireworks</p>
-  <canvas id="birthday"></canvas>
+
+    <audio id="myAudio">
+        <source src="./music/hpbd.mp3">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+    <button id="playButton">Play Music</button>
+    <div><img class="fit-picture" src="./img/hpbd-bg.png" alt="" /></div>
+    <p>Tap the screen continuously to shoot big fireworks</p>
+    <canvas id="birthday"></canvas>
+
 </body>
+    <script>
+    const audio = document.getElementById('myAudio');
+    const playButton = document.getElementById('playButton');
+
+    playButton.addEventListener('click', () => {
+        audio.play()
+            .then(() => {
+                console.log('Audio playing successfully!');
+            })
+            .catch(error => {
+                console.error('Autoplay prevented:', error);
+                // Handle cases where autoplay is still blocked (e.g., show a message)
+            });
+    });
+</script>
     <script type="application/javascript" src="./script/main.js"></script>
+
 </html>
