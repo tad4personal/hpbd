@@ -1,4 +1,3 @@
-document.getElementById('hpbd-song').play();
 // helper functions
 const PI2 = Math.PI * 2
 const random = (min, max) => Math.random() * (max - min + 1) + min | 0
@@ -157,3 +156,4 @@ document.ontouchstart = evt => birthday.onClick(evt)
     
 
   })()
+document.getElementById('hpbd-song').play();
