@@ -35,4 +35,5 @@ p {
   left: 50%;
   transform: translateX(-50%);
   color: #bbb;
+  width: 100%;
 }
